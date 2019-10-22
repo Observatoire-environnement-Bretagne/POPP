@@ -1,0 +1,53 @@
+.term-reference-tree-level .term-reference-tree-level .term-reference-tree-level li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#field-popp-photo-nonreq-thes-values div.term-reference-tree > .term-reference-tree-level li{
+    display:block !important;
+}
+
+.no-term-reference-tree-button {
+    display:none;
+}
+
+div.term-reference-tree > .term-reference-tree-level .form-radio{
+    display:none;
+}
+
+.term-reference-tree-level .term-reference-tree-level .term-reference-tree-level li .form-radio{
+    display:inline;
+}
+
+.group-evolution div.form-type-checkbox{
+    display:inline-block;
+    margin-left:5px;
+}
+
+body.admin-menu #toolbar{
+    margin-top:-13px;
+}
+
+.group-contributor{
+    display:none;
+}
+
+input[readonly]{
+    background-color:#ededed;
+}
+
+fieldset.ief-form, .ief-row-form{
+    background: #efefef;
+}
+
+ul.term-reference-tree-level {
+  white-space:pre-wrap;
+}
+
+#field-popp-photo-nonreq-thes-values div.term-reference-tree > .term-reference-tree-level .form-radio{
+    display:inline !important;
+}
+#field-popp-photo-nonreq-thes-values div.term-reference-tree > .term-reference-tree-level li{
+    display:inline-block;
+    margin-left:10px;
+}

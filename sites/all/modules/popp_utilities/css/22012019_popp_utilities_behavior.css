@@ -1,0 +1,8 @@
+.dataLbl, .dataLayersDiv{
+    display:none;
+}
+
+g>image:hover{
+    cursor:pointer;
+
+}
