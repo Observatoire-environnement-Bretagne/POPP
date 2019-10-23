@@ -3098,7 +3098,7 @@ function og_role_grant($group_type, $gid, $uid, $rid) {
 	    	drupal_write_record('users_roles', $role_gipbe);
     	}
     	envoie_mail($user_to_add->name,"Fournisseur");
-
+      //die;
     }elseif($rid==5 || $rid==7){
 
     	$user_to_add = user_load($uid);
@@ -3112,7 +3112,7 @@ function og_role_grant($group_type, $gid, $uid, $rid) {
 
     	}
     	envoie_mail($user_to_add->name,"Gestionnaire");
-      
+    //  die;
     }
     //fin
 
@@ -3128,37 +3128,51 @@ function og_role_grant($group_type, $gid, $uid, $rid) {
 
 function envoie_mail($utilisateur,$type) {
 
-	global $user;
+	global $user,$conf;
 	$mailUser = $user->mail ;
-  //var_dump('test === ' . variable_get('smtp_server_pass_oeb'));
-  //die;
+  /*var_dump( variable_get('smtp_username'));
+  var_dump( variable_get('smtp_port'));
+  var_dump( variable_get('smtp_from')) ;
+  var_dump( variable_get('smtp_fromname'));
+  var_dump( variable_get('smtp_password'));
+  var_dump( variable_get('smtp_host'));
+
+  die;*/
+  variable_del('smtp_server_url_oeb');
+  variable_del('smtp_server__dest_oeb');
+  variable_del('smtp_server__port_oeb');
+variable_del('smtp_server_user_oeb');
+variable_del('smtp_server_pass_oeb');
+variable_del('smtp_server__port_oeb');
+  variable_del('smtp_server__from_mail_oeb');
+  variable_del('smtp_server__from_name_oeb');
 	$the_user =  user_load_by_name($utilisateur);
 
 	$mail = new PHPMailer();
 	$mail->IsSMTP(); // activation des fonctions SMTP
 	$mail->SMTPAuth = true; // on l’informe que ce SMTP nécessite une autentification
 	//$mail->SMTPSecure = 'tls'; // protocole utilisé pour sécuriser les mails 'ssl' ou 'tls'
-	$mail->Host = variable_get('smtp_server_url_oeb'); // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
-	$mail->Port = variable_get('smtp_server__port_oeb'); // définition du port du serveur SMTP
-	$mail->Username = variable_get('smtp_server_user_oeb'); // le nom d’utilisateur SMTP
-	$mail->Password = variable_get('smtp_server_pass_oeb'); // son mot de passe SMTP
+	$mail->Host = variable_get('smtp_host'); // définition de l’adresse du serveur SMTP : 25 en local, 465 pour ssl et 587 pour tls
+	$mail->Port = variable_get('smtp_port'); // définition du port du serveur SMTP
+	$mail->Username = variable_get('smtp_username'); // le nom d’utilisateur SMTP
+	$mail->Password = variable_get('smtp_password'); // son mot de passe SMTP
 
 	// Paramètres du mail
-  $liste = explode(",",variable_get('smtp_server__dest_oeb'));
-  foreach ($liste as $key => $value) {
-    $mail->AddAddress($value,$value);
-  }
+  //$liste = explode(",",variable_get('smtp_server__dest_oeb'));
+  //foreach ($liste as $key => $value) {
 
+  //}
+  $mail->AddAddress(variable_get('smtp_from'),variable_get('smtp_fromname'));
 	$mail->AddAddress($mailUser,$user->name);
 	$mail->AddAddress($the_user->mail,     $the_user->name);
 
 
-	$mail->From = variable_get('smtp_server__from_mail_oeb'); // adresse mail de l’expéditeur
-	$mail->FromName = variable_get('smtp_server__from_name_oeb'); // nom de l’expéditeur
-	$mail->AddReplyTo(variable_get('smtp_server__from_mail_oeb'),variable_get('smtp_server__from_name_oeb')); // adresse mail et nom du contact de retour
+	$mail->From = variable_get('smtp_from'); // adresse mail de l’expéditeur
+	$mail->FromName = variable_get('smtp_fromname'); // nom de l’expéditeur
+	$mail->AddReplyTo(variable_get('smtp_from'),variable_get('smtp_fromname')); // adresse mail et nom du contact de retour
 	$mail->IsHTML(true); // envoi du mail au format HTML
 	$mail->Subject = "Assignation utilisateur comme fournisseur"; // sujet du mail
-	$mail->Body = "<html>Bonjour<br/><br/> L'utilisateur <b>".$utilisateur." </b> vient d'&ecirc;tre assign&eacute; comme ". $type .  " avec succ&egrave;s par le gestionnaire <b>".$user->name.". </b><br/><br/>Cordialement <br/><br/>".variable_get('smtp_server__from_name_oeb')." <br/>Administrateur de la POPP-Breizh</html>"; // le corps de texte du mail en HTML
+	$mail->Body = "<html>Bonjour<br/><br/> L'utilisateur <b>".$utilisateur." </b> vient d'&ecirc;tre assign&eacute; comme ". $type .  " avec succ&egrave;s par le gestionnaire <b>".$user->name.". </b><br/><br/>Cordialement <br/><br/>".variable_get('smtp_fromname')." <br/>Administrateur de la POPP-Breizh</html>"; // le corps de texte du mail en HTML
 	$mail->AltBody = "Bonjour"; // le corps de texte du mail en texte brut si le HTML n'est pas supporté
 
 

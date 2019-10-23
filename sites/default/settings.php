@@ -285,11 +285,6 @@ $drupal_hash_salt = 'nndOMnFzxwOfOKu5UZiXgHvKFbgjew0nwWyFuwBj_t8';
 
 $base_url = 'http://localhost';
 
-/* smtp for send mail */
-$conf['smtp_server'] = 'smtp.bretagne-environnement.org';
-$smtp_port = 587;
-$smtp_user = '3883_n.allout' ;
-$smtp_password= 'eQfBaJ2pp' ;
 /**
  * PHP settings:
  *
