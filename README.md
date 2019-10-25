@@ -1,8 +1,7 @@
 # POPP
 Plateforme observatoire photographique des paysages
 
-
-INSTALLATION
+<h1>INSTALLATION</h1>
 La popp est développée sous le CMS Drupal
 
 
