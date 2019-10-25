@@ -1,5 +1,27 @@
 # POPP
-Plateforme observatoire photographique des paysages
+La Plateforme des Observatoires Photographiques du Paysage de Bretagne, la POPP-Breizh, est un projet à l’initiative du Conseil Régional de Bretagne, de la DREAL Bretagne et de l’UMR CNRS 6590 ESO. Cet outil a pour finalité d’analyser les dynamiques paysagères en Bretagne.
+
+La POPP-Breizh facilite l'exploitation des OPP par la gouvernance territoriale. La plateforme, en tant que telle, est un projet qui fédère les différents acteurs qui composent la gouvernance sur les territoires. Plus de trente acteurs de la connaissance paysagère en Bretagne se sont réunis au fur et à mesure du projet pour partager leurs compétences, leurs moyens et leurs expériences. Finalement, la plateforme impulse une dynamique régionale autour des questions paysagères avec 4 OPP en 2011 contre 25 en 2019. 
+
+Puisqu'elle est co-construite avec les porteurs OPP, la plateforme correspond aux besoins des territoires. En effet, elle donne accès aux séries OPP de Bretagne et facilite leurs analyses. L’interface permet :
+
+•  De rechercher des séries OPP par localisation ;
+•  De rechercher des séries OPP par contenu (haie, maison individuelle, cours d’eau, etc.) ;
+•  De rechercher des séries OPP par type de changement (apparition de haie, disparition de haie, etc.) ;
+•  D’exporter les séries OPP et leurs données associées.
+
+Les porteurs d’OPP ont leur propre espace en ligne pour intégrer les séries OPP. Aussi, la plateforme propose une variété d’innovations techniques et thématiques :
+
+    Les séries OPP peuvent être associées à des documents complémentaires. 
+    Le point de vue peut être issu d’une image de référence.
+    Les OPP participatifs sont les bienvenus : exemple de l’OPP de l’UTL de Bretagne.
+    Les internautes peuvent commenter en ligne les séries photographiques.
+    Le témoignage des habitants peut être audio.
+    La dimension sonore des paysages peut être étudiée en intégrant des ambiances sonores. 
+    Les prises de vue depuis les drones peuvent être insérées dans la POPP-Breizh. 
+    Les paysages sous-marins peuvent faire l’objet d’un suivi photographique.
+
+Depuis 2018, la POPP-Breizh est administrée par le pôle paysages de l’Observatoire de l’Environnement en Bretagne (OEB). Toute institution bretonne qui souhaite créer son OPP ou intégrer ses séries photographiques, peut contacter l’OEB afin de contribuer au projet. Par ailleurs, l’OEB recherche des partenaires dans d’autres régions en France ou à l’international pour déployer d’autres plateformes à partir du logiciel de la POPP.
 
 <h1>INSTALLATION</h1>
 La popp est développée sous le CMS Drupal
