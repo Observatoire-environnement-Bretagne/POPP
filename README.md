@@ -5,6 +5,7 @@ La POPP-Breizh facilite l'exploitation des OPP par la gouvernance territoriale. 
 
 Depuis 2018, la POPP-Breizh est administrée par le pôle paysages de l’Observatoire de l’Environnement en Bretagne (OEB). Toute institution bretonne qui souhaite créer son OPP ou intégrer ses séries photographiques, peut contacter l’OEB afin de contribuer au projet. Par ailleurs, l’OEB recherche des partenaires dans d’autres régions en France ou à l’international pour déployer d’autres plateformes à partir du logiciel de la POPP.
 
+<img src='popp_image.jpg > </img>
 
 
 <h1>INSTALLATION</h1>
