@@ -16,10 +16,10 @@ La popp est développée sous le CMS Drupal
 <h2>PRÉREQUIS</h2>
 
 Pour installer la POPP, ces packages doivent être installés
-PostgreSQL >=9.5
-PHP >=5.6
-Postgis >=1.5
-Apache >=2.2
+ - PostgreSQL >=9.5
+ - PHP >=5.6
+ - Postgis >=1.5
+ - Apache >=2.2
 
 ------------
 
