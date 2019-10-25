@@ -4,17 +4,15 @@ Plateforme observatoire photographique des paysages
 <h1>INSTALLATION</h1>
 La popp est développée sous le CMS Drupal
 
-
-Pour plus d'informations voir le fichier
-doc/documentation technique de la popp-breizh.pdf
 ---------------------
-PRÉREQUIS
----------
+<h2>PRÉREQUIS</h2>
+
 Pour installer la POPP, ces packages doivent être installés
 PostgreSQL >=9.5
 PHP >=5.6
 Postgis >=1.5
 Apache >=2.2
+
 ------------
 
 DATABASE
