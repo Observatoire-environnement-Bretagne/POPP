@@ -47,6 +47,6 @@ CONFIGURATION
 on suppose que l'application est installée en local
 5. Vous pouvez vous connecter avec le user admin/admin
 
-Mailing :
-pour la partie envoi de Mail, veuillez modifier files
+<h1>MAILING</h1>
+pour la partie envoi de Mail, veuillez modifier les
 parametres smtp sous : http://votre_url/admin/config/system/smtp
