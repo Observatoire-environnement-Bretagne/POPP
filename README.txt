@@ -32,3 +32,8 @@ CONFIGURATION
 3. modifier si necessaire le parametre $base_url dans ce même fichier
 4. ouvrir le navigateur et tapez http://localhost/popp
 on suppose que l'application est installée en local
+5. Vous pouvez vous connecter avec le user admin/admin
+
+Mailing :
+pour la partie envoi de Mail, veuillez modifier files
+parametres smtp sous : http://votre_url/admin/config/system/smtp
