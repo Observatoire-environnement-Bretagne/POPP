@@ -1,5 +1,6 @@
 
 INSTALLATION
+La popp est développée sous le CMS Drupal
 ---------------------
 PRÉREQUIS
 ---------
