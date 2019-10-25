@@ -1,6 +1,8 @@
 
 INSTALLATION
 La popp est développée sous le CMS Drupal
+Pour plus d'informations voir le fichier
+doc/documentation technique de la popp-breizh.pdf
 ---------------------
 PRÉREQUIS
 ---------
